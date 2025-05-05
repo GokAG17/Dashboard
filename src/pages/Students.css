@@ -1,0 +1,56 @@
+/* Students.css */
+
+.students-page {
+  padding: 40px 60px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.students-title {
+  color: #001529;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.students-table {
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.students-table .ant-table-thead > tr > th {
+  background-color: #1890ff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+
+.students-table .ant-table-tbody > tr > td {
+  text-align: center;
+  font-size: 15px;
+  padding: 12px 8px;
+}
+
+.students-table .ant-pagination {
+  margin-top: 16px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .students-page {
+    padding: 20px;
+  }
+
+  .students-title {
+    font-size: 22px;
+  }
+
+  .students-table .ant-table-thead > tr > th,
+  .students-table .ant-table-tbody > tr > td {
+    font-size: 14px;
+    padding: 10px 4px;
+  }
+}

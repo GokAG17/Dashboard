@@ -1,0 +1,48 @@
+/* Header.css */
+
+.custom-header-menu {
+  background-color: #001529 !important;
+  display: flex;
+  justify-content: flex-start; /* Align to left */
+  border-bottom: 2px solid #1890ff;
+  padding: 0 20px;
+  font-weight: 500;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.custom-header-menu .ant-menu-item {
+  transition: all 0.3s ease;
+  padding: 0 25px !important;
+  font-size: 16px;
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  height: 64px !important;
+}
+
+.custom-header-menu .ant-menu-item:hover {
+  background-color: #1890ff !important;
+  color: #ffffff !important;
+}
+
+.custom-header-menu .ant-menu-item-selected {
+  background-color: #40a9ff !important;
+  color: #ffffff !important;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-header-menu {
+    flex-direction: column;
+    align-items: flex-start; /* Align to left on small screens */
+  }
+
+  .custom-header-menu .ant-menu-item {
+    width: 100%;
+    justify-content: flex-start; /* Align text left */
+    padding: 12px 20px !important;
+  }
+}

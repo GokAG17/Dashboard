@@ -1,0 +1,56 @@
+/* Performance.css */
+
+.performance-page {
+  padding: 40px 60px;
+  background-color: #f9f9fb;
+  min-height: 100vh;
+}
+
+.performance-title {
+  text-align: center;
+  color: #001529;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.performance-table {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.performance-table .ant-table-thead > tr > th {
+  background-color: #1890ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.performance-table .ant-table-tbody > tr > td {
+  text-align: center;
+  font-size: 15px;
+  padding: 12px 10px;
+}
+
+.performance-table .ant-pagination {
+  margin-top: 20px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .performance-page {
+    padding: 20px;
+  }
+
+  .performance-title {
+    font-size: 22px;
+  }
+
+  .performance-table .ant-table-thead > tr > th,
+  .performance-table .ant-table-tbody > tr > td {
+    font-size: 14px;
+    padding: 8px 4px;
+  }
+}

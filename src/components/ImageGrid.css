@@ -1,0 +1,81 @@
+/* RenderImageGrid.css */
+
+/* General container for the image carousel */
+.image-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Image display container */
+.image-display {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the image box */
+.image-box {
+  cursor: pointer;
+  border: 2px solid transparent;
+  margin: 10px;
+  position: relative;
+  transition: border 0.3s ease;
+}
+
+.image-box:hover {
+  border-color: #1890ff; /* Add a hover effect */
+}
+
+/* Style for the image */
+.image-box img {
+  width: 550px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect to enlarge the image */
+.image-box img:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation buttons container */
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Style for navigation buttons */
+.carousel-nav .ant-btn {
+  margin-right: 10px;
+}
+
+/* Centered bottom button */
+.carousel-nav button {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-nav .ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+/* Hover effect for primary buttons */
+.carousel-nav .ant-btn-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
